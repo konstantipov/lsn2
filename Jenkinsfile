@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/konstantipov/lesson2.git'])
+        git([url: 'https://github.com/konstantipov/lsn2.git'])
 sh "date"
       }
     }
