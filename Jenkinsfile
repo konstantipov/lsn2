@@ -24,7 +24,6 @@ pipeline {
           docker.withRegistry( '', registryCredential ) {
 //            dockerImage.push("$BUILD_NUMBER")
              dockerImage.push('latest')
-
           }
         }
       }
@@ -33,7 +32,6 @@ pipeline {
       steps{
         sh "docker run --rm -d -p80:8080 konstantipov/jenkins:latest"
         sh "date"
-
       }
     }
   }
