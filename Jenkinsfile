@@ -10,7 +10,7 @@ pipeline {
     stage('Cloning Git') {
       steps {
         git([url: 'https://github.com/konstantipov/lesson2.git'])
-
+sh "date"
       }
     }
     stage('Building image') {
