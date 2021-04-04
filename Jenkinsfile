@@ -30,7 +30,7 @@ pipeline {
     }
     stage('Deploy') {
       steps{
-        sh "docker run --rm -d -p81:80 konstantipov/jenkins:latest"
+        sh "docker run --rm -d -p81:9090 konstantipov/jenkins:latest"
         sh "date"
       }
     }
