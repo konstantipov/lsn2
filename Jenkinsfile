@@ -1,9 +1,9 @@
-
 pipeline {
   environment {
     imagename = "konstantipov/jenkins"
     registryCredential = 'dockerhub_id'
     dockerImage = ''
+    echo $registryCredential
   }
   agent any
   stages {
